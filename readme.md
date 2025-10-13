@@ -10,9 +10,8 @@ This could have a number of uses such as:
 
 We plan to have interativity with the user 
 
-1. [Planning](docs/planning.md)
-2. [Requirements](docs/requirements.md)
-3. [Design](docs/design.md)
-4. [Implementation](docs/implementation.md)
-5. [Testing](docs/testing.md)
-
+1. [Planning](<documentation templates/docs/planning.md>)
+2. [Requirements](<documentation templates/docs/requirements.md>)
+3. [Design](<documentation templates/docs/design.md>)
+4. [Implementation](<documentation templates/docs/implementation.md>)
+5. [Testing](<documentation templates/docs/testing.md>)
