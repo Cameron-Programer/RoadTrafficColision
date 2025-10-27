@@ -3,8 +3,11 @@
 ## User Needs
 
 ### User stories
-TODO: Write brief user stories to explain how various actors would interact with the system to accomplish a goal.
-    Express these in the form from agile development:- As a (role) I want (goal) so that (benefit).
+
+As an insurance broker I want to see how a client moving house will affect the risk that I am insuring, so that I can charge more if they are increasing risk. 
+
+As a motorist I want to see how me moving house may affect my insurance premiums so I can see how much my yearly premiums may increase/decrease so I can budget more accuratly. 
+
 
 ### Actors
 TODO: List and describe the actors/users for this product.
