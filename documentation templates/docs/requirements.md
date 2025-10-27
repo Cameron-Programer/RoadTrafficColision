@@ -8,24 +8,32 @@ As an insurance broker I want to see how a client moving house will affect the r
 
 As a motorist I want to see how me moving house may affect my insurance premiums so I can see how much my yearly premiums may increase/decrease so I can budget more accuratly. 
 
+As a commuter and pedestrian I want to see hotspots for car crashes so I know where I need to be more cautious, what areas I might need to avoid, or the nature of common accidents in the area. 
+
+As a lobbyist I want to see hotspots for fatal crashes so I can highlight key problem areas and put pressure on improving the infrastructure there.
 
 ### Actors
-TODO: List and describe the actors/users for this product.
+- Insurance broker
+- Road User
+- Traffic engineers
+- Tourists
+- Towing/recovery companies
+- Lobbyists/protesters
 
 ### Use Cases
-TODO: Describe each use case (at least one per team member).
-    Give each use case a unique ID, e.g. UC1, UC2, ...
-    Summarise these using the use-case template below.
-
-| TODO: USE-CASE ID e.g. UC1, UC2, ... | TODO: USE-CASE NAME | 
+| UC1 | Usage as an insurance tool | 
 | -------------------------------------- | ------------------- |
-| **Description** | TODO: Goal to be achieved by use case and sources for requirement |
-| **Actors** | TODO: List of actors involved in use case |
-| **Assumptions** | TODO: Pre/post-conditions if any</td></tr>
-| **Steps** | TODO: Interactions between actors and system necessary to achieve goal |
-| **Variations** | TODO: OPTIONAL - Any variations in the steps of a use case |
-| **Non-functional** | TODO: OPTIONAL - List of non-functional requirements that the use case must meet. |
-| **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
+| **Description** | What areas have the most accidents? Vary rates based upon the provided data.
+| **Actors** | Insurers, Insurees |
+| **Assumptions** | We assume that the involved are a motorist, and legally require insurance
+| | Accessibility: We assume everyone can see the website
+| **Steps** | 1. Opt to highlight a key area
+| | 2. Request for traffic data within that area
+| | 3. Highlight all relevant traffic collisions in that area
+| | 4. Display table of all relevant data within the Bristol area
+| **Variations** | Accessibility: Users may not always be able to visually use the website, but still may desire access to the data. Having nonvisual (textual) data formatting will help. |
+| **Non-functional** | Service should run on all modern browsers (i.e Chromium based browsers, firefox) |
+| **Issues** |  |
 
 
 TODO: Your Use-Case diagram should include all use-cases.
