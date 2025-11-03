@@ -10,7 +10,7 @@ As a motorist I want to see how me moving house may affect my insurance premiums
 
 As a commuter and pedestrian I want to see hotspots for car crashes so I know where I need to be more cautious, what areas I might need to avoid, or the nature of common accidents in the area. 
 
-As a lobbyist I want to see hotspots for fatal crashes so I can highlight key problem areas and put pressure on improving the infrastructure there.
+As a lobbyist I want to see hotspots for fatal crashes so I can highlight key problem areas and put pressure on the highway department to improve the infrastructure there.
 
 ### Actors
 - Insurance broker

@@ -20,6 +20,10 @@ The few alternatives that I can see are:
 - Risk of legal action if analysis of data is incorrect 
 
 ## Project Scope
-TODO: Scope of the System of Interest. Include a bullet list of things from your context diagram that are in scope.
+- Displaying analised RTC data
+- Having a visual display using a map 
+	- Have an alternative for users who are using a screen reader. 
+
+- Potential an account system for commerisal use. (Could charge for a licence)
 
 ![Bob](images\contextdiagram.drawio.png)
