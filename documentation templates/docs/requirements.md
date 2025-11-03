@@ -49,7 +49,7 @@ As a lobbyist I want to see hotspots for fatal crashes so I can highlight key pr
 
 TODO: Your Use-Case diagram should include all use-cases.
 
-![Insert your Use-Case Diagram Here](images/use-case.png)
+![Insert your Use-Case Diagram Here](images/DrawioFiles/UseCase.drawio.png)
 
 ## Software Requirements Specification
 ### Functional requirements
