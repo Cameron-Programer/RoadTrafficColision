@@ -47,17 +47,25 @@ As a lobbyist I want to see hotspots for fatal crashes so I can highlight key pr
 | **Non-functional** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
 
-TODO: Your Use-Case diagram should include all use-cases.
 
 ![Insert your Use-Case Diagram Here](images/DrawioFiles/UseCase.drawio.png)
+![UseCase2](images/DrawioFiles/UseCase2.drawio.png)
 
 ## Software Requirements Specification
 ### Functional requirements
-TODO: create a list of functional requirements. 
-    e.g. "The system shall ..."
-    Give each functional requirement a unique ID. e.g. FR1, FR2, ...
-    Indicate which UC the requirement comes from.
+#### FR1 [UC1] 
+The system shall present two input boxes to take input of two post codes. 
+One postcode being the users previous postcode and the other being their new postcode. 
 
+#### FR2 [UC1]
+The system shall generate a list of top ten roads within a user defined radius that have had serious collisions on them. 
+These will be presented in order of most incidents to least. 
+
+#### FR3 [UC1]
+The system shall also present the data plotted onto a map as a visual aid for users. 
+
+#### FR4 [UC2] 
+The system shall also present the serious and fatal data points on a map in the form of a heat map. 
 
 ### Non-Functional Requirements
 TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/ISO/IEC_9126) to suggest a small number of non-functional requirements.
