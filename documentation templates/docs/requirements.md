@@ -58,17 +58,20 @@ The system shall present two input boxes to take input of two post codes.
 One postcode being the users previous postcode and the other being their new postcode. 
 
 #### FR2 [UC1]
-The system shall generate a list of top ten roads within a user defined radius that have had serious collisions on them. 
+The system shall generate a list of top ten roads within a user defined radius that have had collisions on them. 
 These will be presented in order of most incidents to least. 
 
-#### FR3 [UC1]
-The system shall also present the data plotted onto a map as a visual aid for users. 
-
-#### FR4 [UC2] 
-The system shall also present the serious and fatal data points on a map in the form of a heat map. 
+#### FR3 [UC2] 
+The system shall generate a list of every collision in Bristol in a format that is able to be overlay-ed onto a map.
 
 ### Non-Functional Requirements
-TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/ISO/IEC_9126) to suggest a small number of non-functional requirements.
-Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
 
-Indicate which UC the requirement comes from.
+#### N-FR1 [UC1]
+The system shall also present the data plotted onto a map as a visual aid for users. 
+
+#### N-FR2 [UC2] 
+The system shall also present collision data points on a map in the form of a heat map. As a visual aid to make it easier to understand. 
+
+#### N-FR3 [UC1 & UC2]
+The system shall present an menu for the user to filter collision by their category. 
+e.g (Minor,Serious,Fatal)
