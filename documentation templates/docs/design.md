@@ -2,7 +2,7 @@
 
 ## User Interface design
 
-![](images/[DRAFT]ComparisonDesign.drawio.png)
+![](images/DrawioFiles/[DRAFT]ComparisonDesign.drawio.png)
 
 TODO: Specify and develop a user interface mockup using a wireframe.
 
