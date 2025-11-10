@@ -1,7 +1,10 @@
 # TODO: Enter the contributions of each team member
 
-| Cameron                                                           | Ninsang                       |
-| ----------------------------------------------------------------- | ----------------------------- |
-| Created the github                                                | Fixed the links in the readme |
-| Created the wireframe draft                                       |                               |
-| Put draft/early content into the readme and the planning.md files |                               |
+| Cameron                             | Ninsang                       |
+| ----------------------------------- | ----------------------------- |
+| Created the GitHub                  | Fixed the links in the readme |
+| Created the wireframe draft         | Created the context diagram   |
+| Created UseCase diagrams            |                               |
+| Created Functional Requirements     |                               |
+| Created Non-Functional Requirements |                               |
+|                                     |                               |
