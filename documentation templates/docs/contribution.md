@@ -7,4 +7,5 @@
 | Created UseCase diagrams            |                               |
 | Created Functional Requirements     |                               |
 | Created Non-Functional Requirements |                               |
+| Added Expected Risks to planning    |                               |
 |                                     |                               |

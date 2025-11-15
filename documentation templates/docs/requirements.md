@@ -62,16 +62,19 @@ The system shall generate a list of top ten roads within a user defined radius t
 These will be presented in order of most incidents to least. 
 
 #### FR3 [UC2] 
-The system shall generate a list of every collision in Bristol in a format that is able to be overlay-ed onto a map.
+The system should generate a list of every collision in Bristol in a format that is able to be overlay-ed onto a map.
 
 ### Non-Functional Requirements
 
 #### N-FR1 [UC1]
-The system shall also present the data plotted onto a map as a visual aid for users. 
+The system could also present the data plotted onto a map as a visual aid for users. 
 
 #### N-FR2 [UC2] 
-The system shall also present collision data points on a map in the form of a heat map. As a visual aid to make it easier to understand. 
+The system could also present collision data points on a map in the form of a heat mzap. As a visual aid to make it easier to understand. 
 
 #### N-FR3 [UC1 & UC2]
-The system shall present an menu for the user to filter collision by their category. 
+The system should present an menu for the user to filter collision by their category. 
 e.g (Minor,Serious,Fatal)
+
+#### N-FR4 [UC2]
+The system could load the map at broad mead if Geo-location is not available from the browser

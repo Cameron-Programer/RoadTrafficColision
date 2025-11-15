@@ -12,15 +12,17 @@ TODO: List high-level benefits that this product will provide.
 ### Options Considered
 There appear not be be any public facing products in this category that do what this project is attempting (most likely because its not a particularly profitable product)
 
-The few alternatives that I can see are:
+The only public alternative that I can see is:
 - OpenDataBristol - Users could just manually review the data 
 	NOTE: There are other councils that publish data in this way (e.g. London) but they all fall under this category 
 
 ### Expected Risks
-- Risk of legal action if analysis of data is incorrect 
+- Risk of negative feedback from the Council if this leads to increased scrutiny of their work
+- Risk of negative sentiment towards drivers if this data shows that they are involved in the majority of collisions. 
+- Risk of inaccurate analysis leading to someone going down a more dangerous route.
 
 ## Project Scope
-- Displaying analised RTC data
+- Displaying analysed RTC data
 - Having a visual display using a map 
 	- Have an alternative for users who are using a screen reader. 
 
