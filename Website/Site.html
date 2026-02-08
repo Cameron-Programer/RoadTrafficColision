@@ -20,21 +20,32 @@
             Road Traffic Collision
         </header>
 
-        <div id="map" style="width: 500px; height: 500px"></div>
+        <div id="map" style="width: 500px; height: 700px"></div>
             <script>
+                console.log("Map Script has Started Running....")
                 // Start of Start gude script
-                var map = L.map('map').setView([51.505, -2.50], 13);
+                const map = L.map('map').setView([51.45, -2.555], 12);
                 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     maxZoom: 19,
-                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                }).addTo(map);
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
                 // End of start guide script
-            </script> <!-- This script is fromt he leaflet quickstart guide -->
+                console.log("Map Script has finished")
+            </script> <!-- This script is from the leaflet quickstart guide -->
+            <script id="OdpApi">
+                console.log("OpenDataBristol Scrip has begun running...")
+                let url = "https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/41/query?where=1%3D1&outFields=DATE_,TIME,SEVERITY,ACCIDENT_TYPE,ACCIDENT_DESCRIPTION,RENDER,DATE_TIME_CONVERTED,SEVERITY_DESCRIPTION,CASUALTIES&outSR=4326&f=geojson"
+                fetch(url,{method: 'GET', headers:{"Accept":"application/json"}}).then(response => response.json()).then((json) => console.log(json))
+                //TODO:Make this add pins to the map. Currently it just put the data into the console.
+
+            </script>
 
 
 
         <footer class="w3-grey w3-text-white w3-padding">
-            © Bristol City Council (ODB) | Cameron Mackie & Ninsang Sherpa | University of the West of England (UWE)
+
+            ©<a href="https://opendata.bristol.gov.uk">2026 Open Data Bristol</a> & <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> & Cameron Mackie & Ninsang Sherpa <br>
+            A project for <a href="https://www.uwe.ac.uk">the University of the West of England's (UWE)</a> Software Eng course<br>
+            Contact: <a href="mailto:cameron2.mackie@live.uwe.ac.uk">Cameron2.Mackie@live.uwe.ac.uk</a> or <a href="mailto:Ninsang2.Sherpa@live.uwe.ac.uk">Ninsang2.Sherpa@live.uwe.ac.uk</a><br>
         </footer>
     </body>
 </html>
