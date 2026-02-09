@@ -24,7 +24,7 @@
             <script>
                 console.log("Map Script has Started Running....")
                 // Start of Start gude script
-                const map = L.map('map').setView([51.45, -2.555], 12);
+                var map = L.map('map').setView([51.45, -2.555], 12);
                 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     maxZoom: 19,
                     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
@@ -34,9 +34,16 @@
             <script id="OdpApi">
                 console.log("OpenDataBristol Scrip has begun running...")
                 let url = "https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/41/query?where=1%3D1&outFields=DATE_,TIME,SEVERITY,ACCIDENT_TYPE,ACCIDENT_DESCRIPTION,RENDER,DATE_TIME_CONVERTED,SEVERITY_DESCRIPTION,CASUALTIES&outSR=4326&f=geojson"
-                fetch(url,{method: 'GET', headers:{"Accept":"application/json"}}).then(response => response.json()).then((json) => console.log(json))
-                //TODO:Make this add pins to the map. Currently it just put the data into the console.
+                let data = fetch(url,{method: 'GET', headers:{"Accept":"application/json"}})
+                    .then(response => response.json())
+                    .then((json) => json["features"])
+                    .then((json) => json[0])
+                    .then((json) => arr = [json["geometry"]["coordinates"]["1"],json["geometry"]["coordinates"]["0"]])
+                    .then((json) => console.log(arr))
+                    //.then((json) => [(json["features"][0]["geometry"]["coordinates"]["1"]),(json["features"][0]["geometry"]["coordinates"]["0"])]))
+                    //.then((json) => {for (i = 0;i==(json["features"].length);i++){let market = L.marker(json["features"][i]["geometry.coordinates"]).addTo(map);}});
 
+                    console.log("Open Data Bristol Script has finished")
             </script>
 
 

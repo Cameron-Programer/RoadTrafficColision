@@ -8,8 +8,6 @@ This could have a number of uses such as:
 - List of roads with a high number of collisions for their length
 - Heatmaps of junctions with lots of fatal collions it.
 
-We plan to have interativity with the user 
-
 1. [Planning](<documentation templates/docs/planning.md>)
 2. [Requirements](<documentation templates/docs/requirements.md>)
 3. [Design](<documentation templates/docs/design.md>)
@@ -18,4 +16,4 @@ We plan to have interativity with the user
 
 ---
 
-© Cameron Mackie, Ninsang Sherpa , [OpenDataBristol](https://opendata.bristol.gov.uk) [OGLv3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/), [OpenStreetMap](https://www.openstreetmap.org/copyright)
+© Cameron Mackie, Ninsang Sherpa , [OpenDataBristol](https://opendata.bristol.gov.uk) ([OGLv3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)), [OpenStreetMap](https://www.openstreetmap.org/copyright)
