@@ -14,10 +14,10 @@ function OdbToMap(json) {
         //if ((json["features"][i]["properties"]["SEVERITY"]) == (search.get("Severity")) | (search.get("Severity")) == 0){
 
         //let marker = L.marker([json["features"][i.toString()]["geometry"]["coordinates"]["1"], json["features"][i.toString()]["geometry"]["coordinates"]["0"]]).addTo(map);
-        let markers = new L.MarkerClusterGroup();
+        /*let markers = new L.MarkerClusterGroup();
         markers.addLayer([json["features"][i.toString()]["geometry"]["coordinates"]["1"], json["features"][i.toString()]["geometry"]["coordinates"]["0"]]).addTo(map);
         map.addLayer(markers);
-
+        */
         /*markers.bindPopup(("Severity Description: " + (json["features"][i]["properties"]["SEVERITY_DESCRIPTION"]).toString()
             + "<br>Description: " + (json["features"][i]["properties"]["ACCIDENT_DESCRIPTION"]).toString()
             + "<br>Render: " + (json["features"][i]["properties"]["RENDER"]).toString()
