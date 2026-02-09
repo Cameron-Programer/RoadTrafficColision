@@ -15,3 +15,7 @@ We plan to have interativity with the user
 3. [Design](<documentation templates/docs/design.md>)
 4. [Implementation](<documentation templates/docs/implementation.md>)
 5. [Testing](<documentation templates/docs/testing.md>)
+
+---
+
+© Cameron Mackie, Ninsang Sherpa , [OpenDataBristol](https://opendata.bristol.gov.uk) [OGLv3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/), [OpenStreetMap](https://www.openstreetmap.org/copyright)
