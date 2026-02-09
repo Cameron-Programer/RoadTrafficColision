@@ -37,9 +37,9 @@
                 let data = fetch(url,{method: 'GET', headers:{"Accept":"application/json"}})
                     .then(response => response.json())
                     .then((json) => json["features"])
-                    .then((json) => json[0])
+                    .then((json) => json[1])
                     .then((json) => arr = [json["geometry"]["coordinates"]["1"],json["geometry"]["coordinates"]["0"]])
-                    .then((json) => console.log(arr))
+                    .then((json) => L.marker(arr).addTo(map))
                     //.then((json) => [(json["features"][0]["geometry"]["coordinates"]["1"]),(json["features"][0]["geometry"]["coordinates"]["0"])]))
                     //.then((json) => {for (i = 0;i==(json["features"].length);i++){let market = L.marker(json["features"][i]["geometry.coordinates"]).addTo(map);}});
 
