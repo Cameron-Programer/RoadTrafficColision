@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Road Traffic Collision</title>
+        <link rel="icon" href="icon.png" type="image/png" sizes="24x24">
+        <!--TODO: Replace with no-copyright icon before submition -->
+
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
         <!-- This script and link is from the leaflet tutorial -->
@@ -20,8 +23,8 @@
             Road Traffic Collision
         </header>
 
-        <div id="map" style="width: 500px; height: 700px"></div>
-            <script>
+        <div id="map" style="width: 800px; height: 700px"></div>
+            <script> <!-- This script has been modified from the leaflet quickstart guide -->
                 console.log("Map Script has Started Running....")
                 // Start of Start gude script
                 var map = L.map('map').setView([51.45, -2.555], 12);
@@ -30,19 +33,33 @@
                     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
                 // End of start guide script
                 console.log("Map Script has finished")
-            </script> <!-- This script is from the leaflet quickstart guide -->
+            </script> <!-- This script has been modified from the leaflet quickstart guide -->
+
+            <script id="OdpToMapSc">
+                function OdpToMap(json) {
+                    console.log("Odp to map script has started")
+                    console.log(json);
+                    for (let i = 0; i != json.length; i++) {
+                        let marker = L.marker([json["features"][i]["geometry"]["coordinates"]["1"], json["features"][i.toString()]["geometry"]["coordinates"]["0"]]).addTo(map);
+                        marker.bindPopup(json["features"][i]["properties"]);
+                    }
+                    console.log("Sucess!")
+                }
+
+            </script>
+
             <script id="OdpApi">
                 console.log("OpenDataBristol Scrip has begun running...")
                 let url = "https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/41/query?where=1%3D1&outFields=DATE_,TIME,SEVERITY,ACCIDENT_TYPE,ACCIDENT_DESCRIPTION,RENDER,DATE_TIME_CONVERTED,SEVERITY_DESCRIPTION,CASUALTIES&outSR=4326&f=geojson"
-                let data = fetch(url,{method: 'GET', headers:{"Accept":"application/json"}})
+                fetch(url,{method: 'GET', headers:{"Accept":"application/json"}})
                     .then(response => response.json())
-                    .then((json) => json["features"])
-                    .then((json) => json[1])
-                    .then((json) => arr = [json["geometry"]["coordinates"]["1"],json["geometry"]["coordinates"]["0"]])
-                    .then((json) => L.marker(arr).addTo(map))
+                    .then((json) => OdpToMap(json))
+                    //.then((json) => json[0])
+                    //.then((json) => arr = [json["geometry"]["coordinates"]["1"],json["geometry"]["coordinates"]["0"]])
+                    //.then((json) => L.marker(arr).addTo(map))
+
                     //.then((json) => [(json["features"][0]["geometry"]["coordinates"]["1"]),(json["features"][0]["geometry"]["coordinates"]["0"])]))
                     //.then((json) => {for (i = 0;i==(json["features"].length);i++){let market = L.marker(json["features"][i]["geometry.coordinates"]).addTo(map);}});
-
                     console.log("Open Data Bristol Script has finished")
             </script>
 
@@ -50,8 +67,8 @@
 
         <footer class="w3-grey w3-text-white w3-padding">
 
-            ©<a href="https://opendata.bristol.gov.uk">2026 Open Data Bristol</a> & <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> & Cameron Mackie & Ninsang Sherpa <br>
-            A project for <a href="https://www.uwe.ac.uk">the University of the West of England's (UWE)</a> Software Eng course<br>
+            ©<a href="https://opendata.bristol.gov.uk">2026 Open Data Bristol</a> <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">(OGLv3)</a> | <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> | Cameron Mackie | Ninsang Sherpa <br>
+            A project by first year students at <a href="https://www.uwe.ac.uk">the University of the West of England (UWE)</a> on the <a href="https://courses.uwe.ac.uk/6F3B/software-engineering">Software Eng course</a> <br>
             Contact: <a href="mailto:cameron2.mackie@live.uwe.ac.uk">Cameron2.Mackie@live.uwe.ac.uk</a> or <a href="mailto:Ninsang2.Sherpa@live.uwe.ac.uk">Ninsang2.Sherpa@live.uwe.ac.uk</a><br>
         </footer>
     </body>
