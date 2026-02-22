@@ -20,10 +20,29 @@
     </head>
     <body>
         <header class="w3-blue w3-text-white w3-padding">
-            Road Traffic Collision
+            <h1 style="text-align: center">Road Traffic Collision</h1>
+            <form class="w3-padding" style="text-align: center" id="Filter">
+                <select name="severity" class="w3-border-sand w3-padding-small">
+                    <option value="0">Severity</option>
+                    <option value="1">Fatal</option>
+                    <option value="2">Serious</option>
+                    <option value="3">Minor</option>
+                </select>
+
+                <select name="Mode" class="w3-border-sand w3-padding-small" id="mode">
+                    <option value="0">Mode</option>
+                    <option value="1">Car</option>
+                    <option value="2">Cycle</option>
+                    <option value="3">M-Cycle</option>
+                    <option value="4">Pedestrian</option>
+                </select>
+
+                <button type="submit" class="w3-border-sand w3-padding-small">Filter</button>
+            </form>
+
         </header>
 
-        <div id="map" style="width: 800px; height: 700px"></div>
+        <div id="map" style="width: 800px; height: 700px">
             <script> <!-- START: This script has been modified from the leaflet quickstart guide -->
                 console.log("Map Script has started....")
                 // Start of Start gude script
@@ -34,17 +53,33 @@
                 // End of start guide script
                 console.log("Sucess!")
             </script> <!-- END:  This script has been modified from the leaflet quickstart guide -->
+        </div>
+
 
             <script id="OdbToMapSc">
                 function OdbToMap(json) {
                     console.log("Odb to map script has started")
-
+                    let ownURL = document.URL;
+                    let search = new URLSearchParams(ownURL);
+                    console.log(search.values());
 
                     for (var i = 0; i != json["features"].length ; i++) {
-                        console.log(i.toString())
-                        console.log(json["features"].length)
-                        let marker = L.marker([json["features"][i.toString()]["geometry"]["coordinates"]["1"], json["features"][i.toString()]["geometry"]["coordinates"]["0"]]).addTo(map);
-                        marker.bindPopup((json["features"][i]["properties"]["ACCIDENT_DESCRIPTION"]).toString());
+                        //console.log(i.toString())
+                        //console.log(json["features"][i]["properties"][])
+                        //console.log((json["features"][i]["properties"]["SEVERITY"]));
+                        //console.log((search.get("Severity")));
+                       //if ((json["features"][i]["properties"]["SEVERITY"]) == (search.get("Severity")) | (search.get("Severity")) == 0){
+
+                            let marker = L.marker([json["features"][i.toString()]["geometry"]["coordinates"]["1"], json["features"][i.toString()]["geometry"]["coordinates"]["0"]]).addTo(map);
+
+
+                            marker.bindPopup(("Severity: "+(json["features"][i]["properties"]["SEVERITY_DESCRIPTION"]).toString()
+                                +"<br>Description: "+(json["features"][i]["properties"]["ACCIDENT_DESCRIPTION"]).toString()
+                                +"<br>Render: "+(json["features"][i]["properties"]["RENDER"]).toString()
+                                +"<br>Casualties: "+(json["features"][i]["properties"]["CASUALTIES"]).toString()
+                                +"<br>Accident Type: "+(json["features"][i]["properties"]["ACCIDENT_TYPE"]).toString()
+                                +"<br>SEVERITY: "+(json["features"][i]["properties"]["SEVERITY"]).toString()));
+                       // }
                     }
                     console.log("Sucess!")
                     return(true)
@@ -58,7 +93,7 @@
                 fetch(url,{method: 'GET', headers:{"Accept":"application/json"}})
                     .then(response => response.json())
                     .then((json) => OdbToMap(json))
-                    console.log("Sucess!")
+                    console.log("Sucess!");
             </script>
 
 
