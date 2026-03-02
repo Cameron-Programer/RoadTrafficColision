@@ -1,0 +1,9 @@
+footer {
+    width: 100vw;
+    background-color: lightblue;
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -5,7 +5,7 @@
 | Created the GitHub                  | Fixed the links in the readme |
 | Created the wireframe draft         | Created the context diagram   |
 | Created UseCase diagrams            | Added Wireframe Low Fidelity  |
-| Created Functional Requirements     |                               |
+| Created Functional Requirements     | Added styles.css for UX       |
 | Created Non-Functional Requirements |                               |
 | Added Expected Risks to planning    |                               |
 | Created webpage with OSM and ODB    |                               |
