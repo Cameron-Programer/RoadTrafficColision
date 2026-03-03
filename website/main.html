@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Road Traffic Collision</title>
+        <link rel="icon" href="icon.png" type="image/png" sizes="24x24">
+        <!--TODO: Replace with no-copyright icon before submition -->
+
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <!-- This script and link is from the leaflet tutorial -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+              integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+              crossorigin=""/>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+                integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+                crossorigin=""></script>
+        <!-- This script and link is from the leaflet tutorial -->
+
+    </head>
+
+    <body>
+        <header class="w3-blue w3-text-white w3-padding">
+            <h1 style="text-align: center">Road Traffic Collision</h1>
+            <form class="w3-padding" style="text-align: center" id="Filter">
+                <select name="severity" class="w3-border-sand w3-padding-small">
+                    <option value="0">Severity</option>
+                    <option value="1">Fatal</option>
+                    <option value="2">Serious</option>
+                    <option value="3">Minor</option>
+                </select>
+
+                <select name="Mode" class="w3-border-sand w3-padding-small" id="mode">
+                    <option value="0">Mode</option>
+                    <option value="1">Car</option>
+                    <option value="2">Cycle</option>
+                    <option value="3">M-Cycle</option>
+                    <option value="4">Pedestrian</option>
+                </select>
+
+                <div class="slidercontainer"> 
+                    <input class="sliderchild" type="range" min="-100" max="100" value="0" class="slider" id="timeslider">
+                    <p class="sliderchild" id="timelabel"> 2007/02/02 </p>
+                    <button class="sliderchild" style="height:15px; width:10px"></button>
+                </div>
+
+                <button type="submit" class="w3-border-sand w3-padding-small">Filter</button>
+            </form>
+
+        </header>
+
+        <script id="slidetimeupdater" src="scripts/slidetimeupdater.js"></script>
+
+        <div id="map">
+            <script src="scripts/map.js"></script> 
+            <script id="OdbToMapSc" src="scripts/obd-to-mapsc.js"></script>
+            <script id="OdbApi" src="scripts/odb-api.js"></script>
+        </div>
+
+        <footer>
+            <p> 
+                ©Cameron Mackie | Ninsang Sherpa | <a href="https://opendata.bristol.gov.uk">2026 Open Data Bristol</a> <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">(OGLv3)</a> | <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a><br>
+                A project by first year students at <a href="https://www.uwe.ac.uk">the University of the West of England (UWE)</a> on the <a href="https://courses.uwe.ac.uk/6F3B/software-engineering">Software Eng course</a> <br>
+                Contact: <a href="mailto:cameron2.mackie@live.uwe.ac.uk">Cameron2.Mackie@live.uwe.ac.uk</a> or <a href="mailto:Ninsang2.Sherpa@live.uwe.ac.uk">Ninsang2.Sherpa@live.uwe.ac.uk</a><br>
+            </p>
+        </footer>
+    </body>
+</html>
