@@ -1,9 +1,32 @@
+header {
+    width: 100vw;
+    margin-bottom: 10px;
+}
+
+.slidercontainer {
+    display: inline-block;
+    padding: 5px;
+}
+.sliderchild {
+    display: inline-block;
+}
+
+#map {
+    width: 800px;
+    height: 700px;
+    align-self: center;
+}
+
 footer {
     width: 100vw;
     background-color: lightblue;
     text-align: center;
+    padding: 5px;
     margin-top: 10px;
-    padding: 20px;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a:hover {
+    color: red;
 }
