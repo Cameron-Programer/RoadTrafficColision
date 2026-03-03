@@ -1,6 +1,20 @@
+:root { /* variable placeholder for key colour schemes */
+    --dust-grey: hsla(150, 2%, 83%, 1);
+    --muted-teal: hsla(137, 23%, 70%, 1);
+    --ash-grey: hsla(172, 14%, 66%, 1);
+    --slate-grey: hsla(217, 8%, 56%, 1);
+    --vintage-lavender: hsla(271, 16%, 50%, 1);
+}
+
 header {
+    background-color: var(--ash-grey);
+    padding-top: 10px;
     width: 100vw;
     margin-bottom: 10px;
+}
+
+body {
+    background-color: var(--slate-grey);
 }
 
 .slidercontainer {
@@ -19,7 +33,7 @@ header {
 
 footer {
     width: 100vw;
-    background-color: lightblue;
+    background-color: var(--ash-grey);
     text-align: center;
     padding: 5px;
     margin-top: 10px;
