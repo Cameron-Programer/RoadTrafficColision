@@ -23,6 +23,12 @@
     </head>
 
     <body>
+        <div id="map">
+            <script src="scripts/start-map.js"></script>
+            <script id="OdbToMapSc" src="scripts/obd-to-mapsc.js"></script>
+            <script id="OdbApi" src="scripts/odb-api.js"></script>
+        </div>
+        
         <header>
             <h1 style="text-align: center">Road Traffic Collision</h1>
             <form class="w3-padding" style="text-align: center" id="Filter">
@@ -54,17 +60,12 @@
 
         <script id="slidetimeupdater" src="scripts/slidetimeupdater.js"></script>
 
-        <div id="map">
-            <script src="scripts/start-map.js"></script> 
-            <script id="OdbToMapSc" src="scripts/obd-to-mapsc.js"></script>
-            <script id="OdbApi" src="scripts/odb-api.js"></script>
-        </div>
-
         <footer>
             <p> 
-                ©Cameron Mackie | Ninsang Sherpa | <a href="https://opendata.bristol.gov.uk">2026 Open Data Bristol</a> <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">(OGLv3)</a> | <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a><br>
-                A project by first year students at <a href="https://www.uwe.ac.uk">the University of the West of England (UWE)</a> on the <a href="https://courses.uwe.ac.uk/6F3B/software-engineering">Software Eng course</a> <br>
-                Contact: <a href="mailto:cameron2.mackie@live.uwe.ac.uk">Cameron2.Mackie@live.uwe.ac.uk</a> or <a href="mailto:Ninsang2.Sherpa@live.uwe.ac.uk">Ninsang2.Sherpa@live.uwe.ac.uk</a><br>
+                <span>Cameron Mackie</span> | <span>Ninsang Sherpa</span> <br>
+                <a href="mailto:Cameron2.Mackie@live.uwe.ac.uk">Cameron2.Mackie@live.uwe.ac.uk</a> | <a href="mailto:Ninsang2.Sherpa@live.uwe.ac.uk">Ninsang2.Sherpa@live.uwe.ac.uk</a><br>
+                A project by first year <a href="https://courses.uwe.ac.uk/6F3B/software-engineering">Software Engineering</a> students at the <a href="https://www.uwe.ac.uk">University of the West of England (Bristol)</a><br>
+                <a href="https://opendata.bristol.gov.uk">2026 Open Data Bristol</a> <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">(OGLv3)</a> | <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a><br>
             </p>
         </footer>
     </body>
