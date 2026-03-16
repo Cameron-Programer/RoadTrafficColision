@@ -2,16 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Road Traffic Collision</title>
-        <link rel="icon" href="images/icon.png" type="image/png" sizes="24x24">
+        <title>Bristol Traffic Collision Data</title>
+        <!--<link rel="icon" href="icon.png" type="image/png" sizes="24x24">-->
         <!--TODO: Replace with no-copyright icon before submition -->
 
         <link rel="stylesheet" href="styles.css">
-        
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
         <!-- This script and link is from the leaflet tutorial -->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -21,24 +18,20 @@
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
                 integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
                 crossorigin=""></script>
-
-        <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
-
         <!-- This script and link is from the leaflet tutorial -->
 
     </head>
 
     <body>
-        <div id="map"> <!--essential to be below header for formatting (layering) purposes-->
-            <script src="scripts/map.js"></script> 
+        <div id="map">
+            <script src="scripts/start-map.js"></script>
             <script id="OdbToMapSc" src="scripts/obd-to-mapsc.js"></script>
             <script id="OdbApi" src="scripts/odb-api.js"></script>
         </div>
-
+        
         <header>
             <h1 style="text-align: center">Road Traffic Collision</h1>
-
-            <form class="w3-padding" style="text-align: center" id="filter">
+            <form class="w3-padding" style="text-align: center" id="Filter">
                 <select name="severity" class="w3-border-sand w3-padding-small">
                     <option value="0">Severity</option>
                     <option value="1">Fatal</option>
@@ -62,6 +55,7 @@
 
                 <button type="submit" class="w3-border-sand w3-padding-small">Filter</button>
             </form>
+
         </header>
 
         <script id="slidetimeupdater" src="scripts/slidetimeupdater.js"></script>
