@@ -17,3 +17,5 @@ Tool Credidation:
     Open Data Bristol API
     Open Street Map API
     Leaflet JS Library
+
+    Coolors.co (https://coolors.co/d3d5d4-a2c5ac-9db5b2-878e99-7f6a93)
