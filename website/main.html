@@ -7,7 +7,7 @@
         <!--TODO: Replace with no-copyright icon before submition -->
 
         <link rel="stylesheet" href="styles.css">
-
+        
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
         <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
@@ -29,9 +29,16 @@
     </head>
 
     <body>
-        <header class="w3-blue w3-text-white w3-padding">
+        <div id="map"> <!--essential to be below header for formatting (layering) purposes-->
+            <script src="scripts/map.js"></script> 
+            <script id="OdbToMapSc" src="scripts/obd-to-mapsc.js"></script>
+            <script id="OdbApi" src="scripts/odb-api.js"></script>
+        </div>
+
+        <header>
             <h1 style="text-align: center">Road Traffic Collision</h1>
-            <form class="w3-padding" style="text-align: center" id="Filter">
+
+            <form class="w3-padding" style="text-align: center" id="filter">
                 <select name="severity" class="w3-border-sand w3-padding-small">
                     <option value="0">Severity</option>
                     <option value="1">Fatal</option>
@@ -55,17 +62,10 @@
 
                 <button type="submit" class="w3-border-sand w3-padding-small">Filter</button>
             </form>
-
         </header>
 
         <script id="slidetimeupdater" src="scripts/slidetimeupdater.js"></script>
-
-        <div id="map">
-            <script src="scripts/map.js"></script> 
-            <script id="OdbToMapSc" src="scripts/obd-to-mapsc.js"></script>
-            <script id="OdbApi" src="scripts/odb-api.js"></script>
-        </div>
-
+        
         <footer>
             <p> 
                 © Cameron Mackie | Ninsang Sherpa | <a href="https://opendata.bristol.gov.uk">2026 Open Data Bristol</a> <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">(OGLv3)</a> | <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a><br>
