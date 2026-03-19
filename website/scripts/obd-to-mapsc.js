@@ -9,21 +9,30 @@ function OdbToMap(json) {
         let render = (json["features"][i]["properties"]["RENDER"]).toString()
         let url = "";
 
-        if (render === "CARS"){
-        url = "images/mapMarkers/cars.png";
-        } else if (render === "MCYC"){
-            url = "images/mapMarkers/mcyc.png";
-        }else if(render === "CYC"){
-            url = "images/mapMarkers/cyc.png";
-        }else if(render === "A"){
-            url = "images/mapMarkers/a.png";
-        }else if(render === "C"){
-            url = "images/mapMarkers/c.png";
-        }else if(render === "E"){
-            url = "images/mapMarkers/e.png";
-        }else{
-            url = "images/mapMarkers/un.png";
+        switch (render){
+            case "CARS":
+                url = "images/mapMarkers/cars.png";
+                break;
+            case "MCYC":
+                url = "images/mapMarkers/mcyc.png";
+                break;
+            case "CYC":
+                url = "images/mapMarkers/cyc.png";
+                break;
+            case "A":
+                url = "images/mapMarkers/a.png";
+                break;
+            case "C":
+                url = "images/mapMarkers/c.png";
+                break;
+            case "E":
+                url = "images/mapMarkers/e.png";
+                break;
+            default:
+                url = "images/mapMarkers/un.png";
+                break;
         }
+
 
         let customIcon = L.icon({
             iconUrl: url,
@@ -36,7 +45,6 @@ function OdbToMap(json) {
             + "<br>Casualties: " + (json["features"][i]["properties"]["CASUALTIES"]).toString()
             + "<br>Accident Type: " + (json["features"][i]["properties"]["ACCIDENT_TYPE"]).toString()
             + "<br>Severity: " + (json["features"][i]["properties"]["SEVERITY"]).toString()));
-
 
         markers.addLayer(marker);
     }
