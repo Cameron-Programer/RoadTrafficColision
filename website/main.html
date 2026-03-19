@@ -30,7 +30,7 @@
 
     <body>
         <div id="map"> <!--essential to be below header for formatting (layering) purposes-->
-            <script src="scripts/map.js"></script> 
+            <script src="scripts/map.js"></script>
             <script id="OdbToMapSc" src="scripts/obd-to-mapsc.js"></script>
             <script id="OdbApi" src="scripts/odb-api.js"></script>
         </div>
@@ -41,17 +41,17 @@
             <form class="w3-padding" style="text-align: center" id="filter">
                 <select name="severity" class="w3-border-sand w3-padding-small">
                     <option value="0">Severity</option>
-                    <option value="1">Fatal</option>
-                    <option value="2">Serious</option>
-                    <option value="3">Minor</option>
+                    <option value="Fatal">Fatal</option>
+                    <option value="Serious">Serious</option>
+                    <option value="Slight">Minor</option>
                 </select>
 
                 <select name="Mode" class="w3-border-sand w3-padding-small" id="mode">
                     <option value="0">Mode</option>
-                    <option value="1">Car</option>
-                    <option value="2">Cycle</option>
-                    <option value="3">M-Cycle</option>
-                    <option value="4">Pedestrian</option>
+                    <option value="CARS">Car</option>
+                    <option value="CYC">Cycle</option>
+                    <option value="MCYC">M-Cycle</option>
+                    <option value="Pedestrians">Pedestrian</option>
                 </select>
 
                 <div class="slidercontainer"> 
@@ -67,11 +67,10 @@
         <script id="slidetimeupdater" src="scripts/slidetimeupdater.js"></script>
 
         <footer>
-            <p> 
-                <span>Cameron Mackie</span> | <span>Ninsang Sherpa</span> <br>
-                <a href="mailto:Cameron2.Mackie@live.uwe.ac.uk">Cameron2.Mackie@live.uwe.ac.uk</a> | <a href="mailto:Ninsang2.Sherpa@live.uwe.ac.uk">Ninsang2.Sherpa@live.uwe.ac.uk</a><br>
+            <p>
+                ©<a href="mailto:Cameron2.Mackie@live.uwe.ac.uk"><span>Cameron Mackie</span></a> | ©<a href="mailto:Ninsang2.Sherpa@live.uwe.ac.uk"><span>Ninsang Sherpa</span></a><br>
                 A project by first year <a href="https://courses.uwe.ac.uk/6F3B/software-engineering">Software Engineering</a> students at the <a href="https://www.uwe.ac.uk">University of the West of England (Bristol)</a><br>
-                <a href="https://opendata.bristol.gov.uk">2026 Open Data Bristol</a> <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">(OGLv3)</a> | <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a><br>
+                ©<a href="https://opendata.bristol.gov.uk">2026 Open Data Bristol</a> <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">(OGLv3)</a> | ©<a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> | <a href="https://leafletjs.com/">Leaflet</a><br>
             </p>
         </footer>
     </body>

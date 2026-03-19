@@ -4,8 +4,6 @@
 
 function OdbToMap(json) {
     console.log("Odb to map script has started")
-    let ownURL = document.URL;
-    console.log(ownURL);
     let markers = new L.MarkerClusterGroup();
     for (var i = 0; i != json["features"].length; i++) {
 
