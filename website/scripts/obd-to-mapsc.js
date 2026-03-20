@@ -8,28 +8,45 @@ function OdbToMap(json) {
     for (var i = 0; i != json["features"].length; i++) {
         let render = (json["features"][i]["properties"]["RENDER"]).toString()
         let url = "";
+        let severity = (json["features"][i]["properties"]["SEVERITY_DESCRIPTION"]).toString()
+        let sevResult = "";
+
+        switch (severity) {
+            case "Slight":
+                sevResult = "Min";
+                break;
+            case "Serious":
+                sevResult = "Srs";
+                break;
+            case "Fatal":
+                sevResult = "Fat";
+                break;
+            default:
+                sevResult = "";
+            }
+
 
         switch (render){
             case "CARS":
-                url = "images/mapMarkers/cars.png";
+                url = `images/mapMarkers/cars${sevResult}.png`;
                 break;
             case "MCYC":
-                url = "images/mapMarkers/mcyc.png";
+                url = `images/mapMarkers/mcyc${sevResult}.png`;
                 break;
             case "CYC":
-                url = "images/mapMarkers/cyc.png";
+                url = `images/mapMarkers/cyc${sevResult}.png`;
                 break;
             case "A":
-                url = "images/mapMarkers/a.png";
+                url = `images/mapMarkers/a${sevResult}.png`;
                 break;
             case "C":
-                url = "images/mapMarkers/c.png";
+                url = `images/mapMarkers/c${sevResult}.png`;
                 break;
             case "E":
-                url = "images/mapMarkers/e.png";
+                url = `images/mapMarkers/e${sevResult}.png`;
                 break;
             default:
-                url = "images/mapMarkers/un.png";
+                url = `images/mapMarkers/un${sevResult}.png`;
                 break;
         }
 
