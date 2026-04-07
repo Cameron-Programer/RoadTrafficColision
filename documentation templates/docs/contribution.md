@@ -1,18 +1,18 @@
 # TODO: Enter the contributions of each team member
 
-| Cameron                                                      | Ninsang                        |
-|--------------------------------------------------------------|--------------------------------|
-| Created the GitHub                                           | Fixed the links in the readme  |
-| Created the wireframe draft                                  | Created context diagram        |
-| Created UseCase diagrams                                     | Created Wireframe Low Fidelity |
-| Created Functional Requirements                              | Created styles.css for UX      |
-| Created Non-Functional Requirements                          | Created timeslide filter       |
-| Added Expected Risks to planning                             |                                |
-| Created webpage with OSM and ODB*                            |                                |
-| Added Marker clustering to improve performace                |                                |
-| Added filter boxs to filter ODB* results                     |                                |
-| Added custom icons for markers based on RENDER var from ODB* |                                |
-
+| Cameron                                                                                        | Ninsang                        |
+|------------------------------------------------------------------------------------------------|--------------------------------|
+| Created the GitHub                                                                             | Fixed the links in the readme  |
+| Created the wireframe draft                                                                    | Created context diagram        |
+| Created UseCase diagrams                                                                       | Created Wireframe Low Fidelity |
+| Created Functional Requirements                                                                | Created styles.css for UX      |
+| Created Non-Functional Requirements                                                            | Created timeslide filter       |
+| Added Expected Risks to planning                                                               |                                |
+| Created webpage with OSM and ODB*                                                              |                                |
+| Added Marker clustering to improve performace                                                  |                                |
+| Added filter boxs to filter ODB* results                                                       |                                |
+| Added custom icons for markers based on<br/>the RENDER and SEVERITY_DESCRIPTION vars from ODB* |                                |
+| Created project structure MD and added it to implmentation.md                                  |                                |
 ---
 
 ### Glossary
@@ -20,6 +20,8 @@
 |--------------|-------------------|
 | ODB          | Open Data Bristol |
 | OSM          | Open Street Maps  |
+| Vars         | Variables         |
+| MD           | Markdown          | 
 
 Tool Credidation:
     Open Data Bristol API

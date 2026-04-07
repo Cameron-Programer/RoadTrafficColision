@@ -9,6 +9,12 @@ By being able to review the collision data for your current address and your new
 ### Business benefits
 TODO: List high-level benefits that this product will provide.
 
+This project will allow people to see a visualization of injury's on the roads in Bristol for diffrent modes of transport.
+This will allow people to become involved in the democratic process of road safety. 
+
+This project hopefully will allow people to make more informed decisions about their routes and mode of travel.
+
+
 ### Options Considered
 There appear not be be any public facing products in this category that do what this project is attempting (most likely because its not a particularly profitable product)
 
@@ -18,14 +24,14 @@ The only public alternative that I can see is:
 
 ### Expected Risks
 - Risk of negative feedback from the Council if this leads to increased scrutiny of their work
-- Risk of negative sentiment towards drivers if this data shows that they are involved in the majority of collisions. 
-- Risk of inaccurate analysis leading to someone going down a more dangerous route.
+- Risk of negative sentiment towards users of a mode of travel if this data shows that they are involved in the majority of collisions. 
+- Risk of inaccurate or misleading presentation of data, leading to someone going down a more dangerous route.
 
 ## Project Scope
 - Displaying analysed RTC data
 - Having a visual display using a map 
 	- Have an alternative for users who are using a screen reader. 
 
-- Potential an account system for commerisal use. (Could charge for a licence)
+- Potential an account system for commercial use. (Could charge for a licence)
 
 ![contextDiagram](https://github.com/Cameron-Programer/RoadTrafficColision/blob/main/documentation%20templates/docs/images/DrawioFiles/contextdiagram.drawio.png?raw=true)
