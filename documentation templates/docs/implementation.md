@@ -81,8 +81,7 @@ TODO: provide a table listing the number of jslint warnings/reports for each mod
 ## Software Architecture
 TODO: Describe the major components of your architecture. Are any particular architectural styles being used?
 
-![Insert your component Diagram here](images/component.png)
-
+![ComonantDiagram, ODB,Leaflet,Leaftlet.markercluster](documentation templates/docs/images/archetectureComponants.png)
 ## Bristol Open Data API
 TODO: Document each query to Bristol Open Data
 
