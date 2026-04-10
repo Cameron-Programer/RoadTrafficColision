@@ -90,3 +90,42 @@ TODO: Repeat as necessary
 
 # User guide
 TODO: Explain how each use-case works by providing step-by-step screenshots for each use-case. This should be based on a tested scenario.
+
+### Filtering RTC's
+By severity of the collision and by mode of transportation. 
+
+Step 1
+Load the site.
+
+![](images/UseCaseImages/Filters/1.png)
+
+Step 2
+Select the severity
+You have 4 options, 
+Severity (Default), this will not filter by severity (so all are included)
+Fatal, this will only show RTC's that had a fatality. 
+Serious, this will only show RTC's that were deemed to be serious by the police
+Minor, this will only show RTC's that had injury but they were deemed to be minor by the police
+
+![](images/UseCaseImages/Filters/2.png)
+
+Step 3
+Select the mode of transport 
+This is determined by using the RENDER var from the API, there may have been multiple modes involved in one RTC. 
+
+This has 5 options 
+Mode (Default), Includes all 
+Car, Only shows RTC's where render is car 
+Cycle, Only shows RTC's where render is bicycles
+M-Cycle, only shows RTCS where render is motorcycle
+Pedestrian, this only shows collisions where the render is a pedetrian. 
+![](images/UseCaseImages/Filters/3.png)
+
+Step 4
+Filter the map 
+
+Now you press the filter button on the right, the URL will update to show the settings you have chosen. 
+When this is updated the map will now only show the type you have chosen 
+
+So for this example the map now only shows Fatal car crashes. 
+![](images/UseCaseImages/Filters/4.png)

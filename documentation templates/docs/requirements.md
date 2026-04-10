@@ -21,19 +21,16 @@ As a lobbyist I want to see hotspots for fatal crashes so I can highlight key pr
 - Lobbyists/protesters
 
 ### Use Cases
-| UC1 | Usage as an insurance tool | 
-| -------------------------------------- | ------------------- |
-| **Description** | What areas have the most accidents? Vary rates based upon the provided data.
-| **Actors** | Insurers, Insurees |
-| **Assumptions** | We assume that the involved are a motorist, and legally require insurance
-| | Accessibility: We assume everyone can see the website
-| **Steps** | 1. Opt to highlight a key area
-| | 2. Request for traffic data within that area
-| | 3. Highlight all relevant traffic collisions in that area
-| | 4. Display table of all relevant data within the Bristol area
-| **Variations** | Accessibility: Users may not always be able to visually use the website, but still may desire access to the data. Having nonvisual (textual) data formatting will help. |
-| **Non-functional** | Service should run on all modern browsers (i.e Chromium based browsers, firefox) |
-| **Issues** |  |
+| UC1               | Usage as an insurance tool                                                                                                                                                                                      | 
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Description**   | What areas have the most accidents? Vary rates based upon the provided data.                                                                                                                                    |
+| **Actors**        | Insurers, Insurees                                                                                                                                                                                              |
+| **Assumptions**   | We assume that the involved are a motorist, and legally require insurance                                                                                                                                       |
+|                   | Accessibility: We assume everyone can see the website                                                                                                                                                           |
+| **Steps**         | 1. Opt to highlight a key area <br> 2. Request for traffic data within that area<br>3. Highlight all relevant traffic collisions in that area<br>4. Display table of all relevant data within the Bristol area  |
+| **Variations**    | Accessibility: Users may not always be able to visually use the website, but still may desire access to the data. Having nonvisual (textual) data formatting will help.                                         |
+| **Non-functional** | Service should run on all modern browsers (i.e Chromium based browsers, firefox)                                                                                                                                |
+| **Issues**        | Serving data in non-map form is likely to be cost prohibitive, as we would need to reverse geocode all 4,000 incidents every time.                                                                              |
 
 
 
