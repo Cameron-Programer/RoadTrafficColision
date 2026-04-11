@@ -13,6 +13,9 @@
 | Added filter boxs to filter ODB* results                                                       |                                |
 | Added custom icons for markers based on<br/>the RENDER and SEVERITY_DESCRIPTION vars from ODB* |                                |
 | Created project structure MD and added it to implmentation.md                                  |                                |
+| Created User guide for using the map & Filters                                                 |                                |
+| Created UML diagram for the ODB API query for the map page and added it to implmentation.md    |                                |
+
 ---
 
 ### Glossary

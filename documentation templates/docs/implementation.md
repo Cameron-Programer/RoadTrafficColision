@@ -83,9 +83,11 @@ TODO: Describe the major components of your architecture. Are any particular arc
 
 ![](images/archetectureComponants.png)
 ## Bristol Open Data API
-TODO: Document each query to Bristol Open Data
+%%TODO: Document each query to Bristol Open Data%%
 
-![UML Class diagrams representing JSON query results](images/class1.png)
+![](images/DrawioFiles/mapApiDiagram.drawio.png)
+
+%%[UML Class diagrams representing JSON query results](images/class1.png)%%
 TODO: Repeat as necessary
 
 # User guide
