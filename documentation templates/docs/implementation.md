@@ -83,11 +83,9 @@ TODO: Describe the major components of your architecture. Are any particular arc
 
 ![](images/archetectureComponants.png)
 ## Bristol Open Data API
-%%TODO: Document each query to Bristol Open Data%%
 
 ![](images/DrawioFiles/mapApiDiagram.drawio.png)
 
-%%[UML Class diagrams representing JSON query results](images/class1.png)%%
 TODO: Repeat as necessary
 
 # User guide
@@ -103,11 +101,12 @@ Load the site.
 
 Step 2
 Select the severity
+
 You have 4 options, 
-Severity (Default), this will not filter by severity (so all are included)
-Fatal, this will only show RTC's that had a fatality. 
-Serious, this will only show RTC's that were deemed to be serious by the police
-Minor, this will only show RTC's that had injury but they were deemed to be minor by the police
+1) Severity (Default), this will not filter by severity (so all are included)
+2) Fatal, this will only show RTC's that had a fatality. 
+3) Serious, this will only show RTC's that were deemed to be serious by the police
+4) Minor, this will only show RTC's that had injury but they were deemed to be minor by the police
 
 ![](images/UseCaseImages/Filters/2.png)
 
@@ -116,11 +115,11 @@ Select the mode of transport
 This is determined by using the RENDER var from the API, there may have been multiple modes involved in one RTC. 
 
 This has 5 options 
-Mode (Default), Includes all 
-Car, Only shows RTC's where render is car 
-Cycle, Only shows RTC's where render is bicycles
-M-Cycle, only shows RTCS where render is motorcycle
-Pedestrian, this only shows collisions where the render is a pedetrian. 
+1) Mode (Default), Includes all 
+2) Car, Only shows RTC's where render is car 
+3) Cycle, Only shows RTC's where render is bicycles
+4) M-Cycle, only shows RTCS where render is motorcycle
+5) Pedestrian, this only shows collisions where the render is a pedetrian. 
 ![](images/UseCaseImages/Filters/3.png)
 
 Step 4
