@@ -1,5 +1,3 @@
-# TODO: Enter the contributions of each team member
-
 | Cameron                                                                                        | Ninsang                        |
 |------------------------------------------------------------------------------------------------|--------------------------------|
 | Created the GitHub                                                                             | Fixed the links in the readme  |
@@ -15,6 +13,7 @@
 | Created project structure MD and added it to implmentation.md                                  |                                |
 | Created User guide for using the map & Filters                                                 |                                |
 | Created UML diagram for the ODB API query for the map page and added it to implmentation.md    |                                |
+| Addedd introduction to implmentation.md                                                        |                                |
 
 ---
 

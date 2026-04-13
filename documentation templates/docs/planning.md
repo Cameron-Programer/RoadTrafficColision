@@ -20,7 +20,7 @@ There appear not be be any public facing products in this category that do what 
 
 The only public alternative that I can see is:
 - OpenDataBristol - Users could just manually review the data 
-	NOTE: There are other councils that publish data in this way (e.g. London) but they all fall under this category 
+	NOTE: There are other local authority that publish data in this way (e.g. London) but they all fall under this category 
 
 ### Expected Risks
 - Risk of negative feedback from the Council if this leads to increased scrutiny of their work
@@ -32,6 +32,6 @@ The only public alternative that I can see is:
 - Having a visual display using a map 
 	- Have an alternative for users who are using a screen reader. 
 
-- Potential an account system for commercial use. (Could charge for a licence)
+- Potential an account system for commercial use. (Could charge for a licence like causeways one network)
 
 ![contextDiagram](https://github.com/Cameron-Programer/RoadTrafficColision/blob/main/documentation%20templates/docs/images/DrawioFiles/contextdiagram.drawio.png?raw=true)

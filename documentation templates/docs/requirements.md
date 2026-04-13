@@ -47,7 +47,7 @@ As a lobbyist I want to see hotspots for fatal crashes so I can highlight key pr
 
 ![Insert your Use-Case Diagram Here](images/DrawioFiles/UseCase.drawio.png)
 ![UseCase2](images/DrawioFiles/UseCase2.drawio.png)
-
+![UseCase3](images/DrawioFiles/UseCase3.drawio.png)
 ## Software Requirements Specification
 ### Functional requirements
 #### FR1 [UC1] 

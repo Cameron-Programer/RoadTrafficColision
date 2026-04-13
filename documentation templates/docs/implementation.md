@@ -3,6 +3,36 @@
 ## Introduction
 TODO: Describe the system implemented (Describe the dataset. Are there any known issues? Describe any configuration data).
 
+
+
+In its current state this system shows a map of every Road Traffic Collision(RTC) with injury or fatality, that the police reported to Bristol city council
+<br>The police do not necessarily attend every non-injury RTC as such they do not report RTC's with no injures. 
+<br>It shows these using custom colour coded custom icons. 
+
+| Mode/Render        | Icon                                       |
+|--------------------|--------------------------------------------|
+| Car                | ![](website/images/mapMarkers/carsFat.png) |
+| Cycle              | ![](website/images/mapMarkers/cycFat.png)  |
+| Motorcycle         | ![](website/images/mapMarkers/mcycFat.png) |
+| Adult pedestrian   | ![](website/images/mapMarkers/aFat.png)    |
+| Child pedestrian   | ![](website/images/mapMarkers/cFat.png)    |
+| Elderly pedestrian | ![](website/images/mapMarkers/eFat.png)    | 
+
+
+| Severity | Colour                                     |
+|----------|--------------------------------------------|
+| Slight   | ![](website/images/mapMarkers/carsMin.png) |
+| Serious  | ![](website/images/mapMarkers/carsSrs.png) |
+| Fatal    | ![](website/images/mapMarkers/carsFat.png) |
+
+The system allows the use to filter the map to only show specific modes of transport (using the RENDER variable from OpenDataBristol) or only show a certain level of seriousness.
+<br>e.g. (Seriousness: Fatal, Mode of transport: Car)
+
+The system allows for users to click individual collisions to see more information about them. 
+
+The system also groups pins together if they are to close, making the system perform better on lower end hardware and making it easier for users to understand the data. 
+
+
 ## Project Structure
 ```
 RoadTrafficCollision:
