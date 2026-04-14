@@ -5,7 +5,7 @@ TODO: Describe the system implemented (Describe the dataset. Are there any known
 
 
 
-In its current state this system shows a map of every Road Traffic Collision(RTC) with injury or fatality, that the police reported to Bristol city council
+In its current state this system shows a map of every Road Traffic Collision(RTC) with injury or fatality, that the police reported to Bristol city council.
 <br>The police do not necessarily attend every non-injury RTC as such they do not report RTC's with no injures. 
 <br>It shows these using custom colour coded custom icons. 
 
@@ -31,6 +31,18 @@ The system allows the use to filter the map to only show specific modes of trans
 The system allows for users to click individual collisions to see more information about them. 
 
 The system also groups pins together if they are to close, making the system perform better on lower end hardware and making it easier for users to understand the data. 
+
+
+The system has gone through a number of stages in its development.
+Some keypoints are below
+
+| Commit (links)                                                                                                      | Description                                                                                                                                                                                                          | Version Number |
+|---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| [3bc44fd](https://github.com/Cameron-Programer/RoadTrafficColision/tree/3bc44fdb7ecb138ff894bfbbfcc20817d35a1271)   | This is the first version of the program that showed all the collisions on the map.<br> So this the point where the program was somewhat usable                                                                      | V0.1.0         |
+| [4a20f20](https://github.com/Cameron-Programer/RoadTrafficColision/commit/4a20f201aa1408bf8475ae0bf8c4095a51c771cc) | This is the commit when the JS and CSS were moved out of the HTML file to make it easier to maintain <br> and allow for multiple people to work simultaniously on the program with lower chances of merge confilicts | V0.1.1         |
+| [974d5da](https://github.com/Cameron-Programer/RoadTrafficColision/tree/974d5dab2a720094f800e082c1779f6e6e6bd3d8)   | This is the commit that added marker clustering,this resolved the issue where bristol was just a sea of pins when zoomed out.                                                                                        | V0.1.2         |
+| [c593d14](https://github.com/Cameron-Programer/RoadTrafficColision/tree/c593d1471891970027cf9c1beb0cf6f9954a0c0e)   | This is the commit that allowed the user to select filters, making it easier for the data to be understood                                                                                                           | V0.2.0         |
+| [2227f01](https://github.com/Cameron-Programer/RoadTrafficColision/tree/2227f014f80ee483e7b41793961a239d737b4c03)   | This is the commit that added the colour coded icons, to make the data easier to understand at a glance                                                                                                              | V0.2.1         | 
 
 
 ## Project Structure
@@ -149,7 +161,7 @@ This has 5 options
 2) Car, Only shows RTC's where render is car 
 3) Cycle, Only shows RTC's where render is bicycles
 4) M-Cycle, only shows RTCS where render is motorcycle
-5) Pedestrian, this only shows collisions where the render is a pedetrian. 
+5) Pedestrian, this only shows collisions where the render is a pedestrian. 
 ![](images/UseCaseImages/Filters/3.png)
 
 Step 4
