@@ -3,20 +3,24 @@
 ## Introduction
 TODO: Describe the system implemented (Describe the dataset. Are there any known issues? Describe any configuration data).
 
+<<<<<<< HEAD
 
 
 In its current state this system shows a map of every Road Traffic Collision(RTC) with injury or fatality, that the police reported to Bristol city council.
+=======
+In its current state this system shows a map of every Road Traffic Collision(RTC) with injury or fatality, that the police reported to Bristol city council
+>>>>>>> af87a99 (Document Revisions)
 <br>The police do not necessarily attend every non-injury RTC as such they do not report RTC's with no injures. 
 <br>It shows these using custom colour coded custom icons. 
 
 | Mode/Render        | Icon                            |
 |--------------------|---------------------------------|
-| Car                | ![](images/mapMarkers/carsFat.png) |
-| Cycle              | ![](images/mapMarkers/cycFat.png) |
-| Motorcycle         | ![](images/mapMarkers/mcycFat.png) |
-| Adult pedestrian   | ![](images/mapMarkers/aFat.png) |
-| Child pedestrian   | ![](images/mapMarkers/cFat.png) |
-| Elderly pedestrian | ![](images/mapMarkers/eFat.png) | 
+| Car                | ![](/home/nin/Documents/Coding/roadtrafficollision2/RoadTrafficColision/website/images/mapMarkers/carsFat.png) |
+| Cycle              | ![](/home/nin/Documents/Coding/roadtrafficollision2/RoadTrafficColision/website/images/mapMarkers/cycFat.png) |
+| Motorcycle         | ![](/home/nin/Documents/Coding/roadtrafficollision2/RoadTrafficColision/website/images/mapMarkers/mcycFat.png) |
+| Adult pedestrian   | ![](/home/nin/Documents/Coding/roadtrafficollision2/RoadTrafficColision/website/images/mapMarkers/aFat.png) |
+| Child pedestrian   | ![](/home/nin/Documents/Coding/roadtrafficollision2/RoadTrafficColision/website/images/mapMarkers/cFat.png) |
+| Elderly pedestrian | ![](/home/nin/Documents/Coding/roadtrafficollision2/RoadTrafficColision/website/images/mapMarkers/eFat.png) |
 
 
 | Severity | Colour                             |
