@@ -8,12 +8,12 @@ This could have a number of uses such as:
 - List of roads with a high number of collisions for their length
 - Heatmaps of junctions with lots of fatal collions it.
 
-1. [Planning](<documentation templates/docs/planning.md>)
-2. [Requirements](<documentation templates/docs/requirements.md>)
-3. [Design](<documentation templates/docs/design.md>)
-4. [Implementation](<documentation templates/docs/implementation.md>)
-5. [Testing](<documentation templates/docs/testing.md>)
-- [Contribution](<documentation templates/docs/contribution.md>)
+1. [Planning](<docs/planning.md>)
+2. [Requirements](<docs/requirements.md>)
+3. [Design](<docs/design.md>)
+4. [Implementation](<docs/implementation.md>)
+5. [Testing](<docs/testing.md>)
+- [Contribution](<docs/contribution.md>)
 
 
 Many thanks to:
