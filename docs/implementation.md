@@ -2,24 +2,12 @@
 
 ## Introduction
 
-TODO: Describe the system implemented (Describe the dataset. Are there any known issues? Describe any configuration data).
+Our source database contains over 4000 data points that describe accident type, severity, casualties, time and location.
 
-<<<<<<< HEAD
+In its current state this system shows a map of every Road Traffic Collision (RTC) with injury or fatality, that the police reported to Bristol city council
 
-In its current state this system shows a map of every Road Traffic Collision(RTC) with injury or fatality, that the police reported to Bristol city council.
-============================================================================================================================================================
-
-In its current state this system shows a map of every Road Traffic Collision(RTC) with injury or fatality, that the police reported to Bristol city council
-
->>>>>>> af87a99 (Document Revisions)
->>>>>>> `<br>`The police do not necessarily attend every non-injury RTC as such they do not report RTC's with no injures.
->>>>>>> `<br>`It shows these using custom colour coded custom icons.
->>>>>>>
->>>>>>
->>>>>
->>>>
->>>
->>
+The police do not necessarily attend every non-injury RTC as such they do not report RTC's with no injures.
+It shows these using the following custom colour coded custom icons:
 
 | Mode/Render        | Icon                             |
 | ------------------ | -------------------------------- |
@@ -57,11 +45,10 @@ Some keypoints are below
 ## Project Structure
 
 └── 📁RoadTrafficColision
-    └── 📁.vscode
     └── 📁docs
         └── 📁images
             └── 📁DrawioFiles
-                ├── [DRAFT]ComparisonDesign.drawio
+                ├── ComparisonDesign.drawio
                 ├── CamWireframeA.png
                 ├── contextdiagram.drawio.png
                 ├── mapApiDiagram.drawio.png
@@ -84,7 +71,6 @@ Some keypoints are below
                     ├── 2.png
                     ├── 3.png
                     ├── 4.png
-            ├── .DS_Store
             ├── archetectureComponants.png
             ├── palette.png
         ├── contribution.md
@@ -126,7 +112,6 @@ Some keypoints are below
             ├── slidetimeupdater.js
         ├── main.html
         ├── styles.css
-    ├── .gitignore
     └── readme.md
 
 TODO: provide a table listing the number of jslint warnings/reports for each module.
