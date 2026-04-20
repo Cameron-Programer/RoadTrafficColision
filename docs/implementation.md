@@ -44,6 +44,7 @@ Some keypoints are below
 
 ## Project Structure
 
+```
 └── 📁RoadTrafficColision
     └── 📁docs
         └── 📁images
@@ -113,6 +114,9 @@ Some keypoints are below
         ├── main.html
         ├── styles.css
     └── readme.md
+
+
+```
 
 TODO: provide a table listing the number of jslint warnings/reports for each module.
 
