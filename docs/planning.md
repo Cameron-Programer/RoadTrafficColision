@@ -52,4 +52,4 @@ While not serving clientele niche, the following provides a similar type of serv
 - Potential an account system for commercial use. (Could charge for a licence like causeways one network)
 - An adjustable system that could have the potential to expand further than one city
 
-![contextDiagram](https://github.com/Cameron-Programer/RoadTrafficColision/blob/main/documentation%20templates/docs/images/DrawioFiles/contextdiagram.drawio.png?raw=true)
+![contextDiagram](images/DrawioFiles/contextdiagram.drawio.png)
