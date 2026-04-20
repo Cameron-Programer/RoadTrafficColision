@@ -32,6 +32,7 @@ if ((mode == "0" && sev == "0") || (mode == null && sev == null)) {
         }
     }
 
+    console.log("mstring: " + modeString);
     urlEncoded = encodeURI(UrlUnencoded);
     console.log(UrlUnencoded);
     console.log(urlEncoded);
@@ -41,5 +42,10 @@ let url = `https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/M
 fetch(url, {method: 'GET', headers: {"Accept": "application/json"}})
     .then(response => response.json())
     .then((json) => OdbToMap(json))
+
+console.log(url);
+
+
+    
 
 console.log("ODB Script Successful!");

@@ -67,5 +67,6 @@ function OdbToMap(json) {
     }
     map.addLayer(markers);
     console.log("Success!")
+    
     return (true)
 }
