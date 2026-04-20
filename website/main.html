@@ -39,7 +39,7 @@
 
 
         <header>
-            <h1 style="text-align: center">Road Traffic Collision</h1>
+            <h1 style="text-align: center">Road Traffic Collision.</h1>
             <!-- Removed until I can create the list, might end up repurposing this to point to the heatmap since that-
             is more in line with the requirements.
 
@@ -48,7 +48,7 @@
                 <button class="w3-dark-grey">Map</button>
             </div>
             -->
-            <form class="w3-padding" style="text-align: center" id="filter">
+            <form style="text-align: center" id="filter">
                 <select name="severity" class="w3-border-sand w3-padding-small">
                     <option value="0">Severity</option>
                     <option value="Fatal">Fatal</option>
@@ -67,10 +67,9 @@
                 <div class="slidercontainer"> 
                     <input class="sliderchild" type="range" min="-100" max="100" value="0" class="slider" id="timeslider">
                     <p class="sliderchild" id="timelabel"> 2007/02/02 </p>
-                    <button class="sliderchild" style="height:15px; width:10px"></button>
                 </div>
 
-                <button type="submit" class="w3-border-sand w3-padding-small">Filter</button>
+                <button type="submit">🔎</button>
             </form>
         </header>
 
@@ -78,10 +77,13 @@
 
         <footer>
             <p>
+                Your safety on the road is <b>your responsibility</b>, always follow the <a href="https://www.gov.uk/guidance/the-highway-code">highway code</a> when using the highway's. <b>Don't become a statistic</b>
+            </p>
+            <p style="font-size: 13px;">
                 ©<a href="mailto:Cameron2.Mackie@live.uwe.ac.uk"><span>Cameron Mackie</span></a> | ©<a href="mailto:Ninsang2.Sherpa@live.uwe.ac.uk"><span>Ninsang Sherpa</span></a><br>
                 A project by first year <a href="https://courses.uwe.ac.uk/6F3B/software-engineering">Software Engineering</a> students at the <a href="https://www.uwe.ac.uk">University of the West of England (UWE)</a><br>
-                ©<a href="https://opendata.bristol.gov.uk">2026 Open Data Bristol</a> <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">(OGLv3)</a> | ©<a href="https://www.openstreetmap.org/copyright">OpenStreetMap(OSM) contributors</a> Tiles by <a href="https://www.hotosm.org/">Humanitarian OSM Team</a> hosted by <a href="https://openstreetmap.fr/">OSM France</a> | <a href="https://leafletjs.com/">Leaflet 🇺🇦</a><br>
-                Your safety on the road is <b>your responsibility</b>, always follow the <a href="https://www.gov.uk/guidance/the-highway-code">highway code</a> when using the highway's. <b>Don't end up on this map</b>
+                ©<a href="https://opendata.bristol.gov.uk">2026 Open Data Bristol</a> <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">(OGLv3)</a> | ©<a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> | <a href="https://leafletjs.com/">Leaflet</a><br>
+                Your safety on the road is <b>your responsibility</b>, always follow the <a href="https://www.gov.uk/guidance/the-highway-code">highway code</a> when using the highway's. <b>Don't become a statistic</b>
             </p>
         </footer>
     </body>
