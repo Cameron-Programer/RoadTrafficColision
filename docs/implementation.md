@@ -56,78 +56,78 @@ Some keypoints are below
 
 ## Project Structure
 
-```
-RoadTrafficCollision:
-├──   readme.md
-|         
-├── documentation templates
-|   └── docs
-|       ├── contribution.md
-|       ├── design.md
-|       ├── implementation.md
-|       ├── planning.md
-|       ├── requirements.md
-|       ├── testing.md
-|       |   
-|       └── images
-|           ├── class1.png
-|           ├── component.png
-|           ├── deployment.png
-|           ├── mockup.png
-|           ├── palette.png
-|           ├── screenshot.png
-|           ├── sequence.png
-|           ├── use-case.png
-|           ├── wireframe.png
-|           |   
-|           └── DrawioFiles
-|               ├── CamWireframeA.png
-|               ├── contextdiagram.drawio.png
-|               ├── NinWireframeA.drawio.png
-|               ├── UseCase.drawio.png
-|               ├── UseCase2.drawio.png
-|               └── [DRAFT]ComparisonDesign.drawio
-|               
-└── Website
-    ├── main.html
-    ├── styles.css
-    |   
-    ├── images
-    |   ├── icon.png
-    |   |   
-    |   └── mapMarkers  
-    |       ├── aFat.png
-    |       ├── aMin.png
-    |       ├── aSrs.png
-    |       ├── carsFat.png
-    |       ├── carsMin.png
-    |       ├── carsSrs.png
-    |       ├── cFat.png
-    |       ├── cMin.png
-    |       ├── cSrs.png
-    |       ├── cycFat.png
-    |       ├── cycMin.png
-    |       ├── cycSrs.png
-    |       ├── eFat.png
-    |       ├── eMin.png
-    |       ├── eSrs.png
-    |       ├── mcycFat.png
-    |       ├── mcycMin.png
-    |       ├── mcycSrs.png
-    |       └── un.png
-    |       
-    └── scripts
-        ├── map.js
-        ├── obd-to-mapsc.js
-        ├── odb-api.js
-        ├── slidetimeupdater.js
-        ├── start-map.js
-        |   
-        └── date selector
-            └── unix-time-converter.js
-            
-
-```
+└── 📁RoadTrafficColision
+    └── 📁.vscode
+    └── 📁docs
+        └── 📁images
+            └── 📁DrawioFiles
+                ├── [DRAFT]ComparisonDesign.drawio
+                ├── CamWireframeA.png
+                ├── contextdiagram.drawio.png
+                ├── mapApiDiagram.drawio.png
+                ├── NinWireframeA.drawio.png
+                ├── UseCase.drawio.png
+                ├── UseCase2.drawio.png
+            └── 📁mapMarkers
+                ├── aFat.png
+                ├── carsFat.png
+                ├── carsMin.png
+                ├── carsSrs.png
+                ├── cFat.png
+                ├── cycFat.png
+                ├── eFat.png
+                ├── mcycFat.png
+                ├── un.png
+            └── 📁UseCaseImages
+                └── 📁Filters
+                    ├── 1.png
+                    ├── 2.png
+                    ├── 3.png
+                    ├── 4.png
+            ├── .DS_Store
+            ├── archetectureComponants.png
+            ├── palette.png
+        ├── contribution.md
+        ├── design.md
+        ├── implementation.md
+        ├── planning.md
+        ├── requirements.md
+        ├── testing.md
+    └── 📁website
+        └── 📁images
+            └── 📁mapMarkers
+                ├── aFat.png
+                ├── aMin.png
+                ├── aSrs.png
+                ├── carsFat.png
+                ├── carsMin.png
+                ├── carsSrs.png
+                ├── cFat.png
+                ├── cMin.png
+                ├── cSrs.png
+                ├── cycFat.png
+                ├── cycMin.png
+                ├── cycSrs.png
+                ├── eFat.png
+                ├── eMin.png
+                ├── eSrs.png
+                ├── mcycFat.png
+                ├── mcycMin.png
+                ├── mcycSrs.png
+                ├── un.png
+            ├── icon.png
+        └── 📁scripts
+            └── 📁date selector
+                ├── unix-time-converter.js
+            ├── leaflet-heat.js
+            ├── map.js
+            ├── obd-to-mapsc.js
+            ├── odb-api.js
+            ├── slidetimeupdater.js
+        ├── main.html
+        ├── styles.css
+    ├── .gitignore
+    └── readme.md
 
 TODO: provide a table listing the number of jslint warnings/reports for each module.
 
