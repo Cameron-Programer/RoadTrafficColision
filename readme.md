@@ -18,7 +18,7 @@ This usage transforms the data in multiple ways, such as the following:
 6. [Contribution](docs/contribution.md)
 
 This project is available to use at: <br>
-https://cameron-programer.github.io/website/
+[https://cameron-programer.github.io/rtc/](https://cameron-programer.github.io/rtc/)
 
 
 Many thanks to:
