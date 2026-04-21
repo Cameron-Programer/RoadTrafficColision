@@ -10,7 +10,7 @@ This usage transforms the data in multiple ways, such as the following:
 - Identifying what type of collision a data point is at a glance
 - Visually see the spread and density of collision data
 
-1. [Planning](templates/docs/planning.md)
+1. [Planning](docs/planning.md)
 2. [Requirements](docs/requirements.md)
 3. [Design](docs/design.md)
 4. [Implementation](docs/implementation.md)
