@@ -3,9 +3,9 @@
 ## Business Case
 
 ### Problem statement
-
+|                   |                                                                                                             |
+|-------------------|-------------------------------------------------------------------------------------------------------------|
 | Urban Navigators  | Road Users (Car drivers, cyclists, motorists, etc)<br />Pedestrians (Disabled people, parents, hikers, etc) |
-| ----------------- | ----------------------------------------------------------------------------------------------------------- |
 | Highway Authority | Traffic engineers<br />Towing/recovery services<br />Highway authority/police                               |
 | Statisticians     | Insurance Brokers<br />Lobbyists/protesters                                                                 |
 

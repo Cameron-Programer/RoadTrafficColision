@@ -17,11 +17,17 @@ This usage transforms the data in multiple ways, such as the following:
 5. [Testing](docs/testing.md)
 6. [Contribution](docs/contribution.md)
 
+This project is available to use at: <br>
+https://cameron-programer.github.io/website/
+
+
 Many thanks to:
 
 - Volodymyr Agafonkin and the Leaflet maintainers
 - The Leaflet.markercluster maintainers
 - The Open Street Maps contributors
+- The Open Street Maps France association
+- The Open Street Maps Humanitarian Team
 - Bristol City Council & Avon and Somerset Police
 
 ---
