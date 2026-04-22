@@ -121,16 +121,18 @@ Some keypoints are below
 TODO: provide a table listing the number of jslint warnings/reports for each module.
 
 ## Software Architecture
-
-TODO: Describe the major components of your architecture. Are any particular architectural styles being used?
+We are using the OpenDataBristol API to access the road traffic collision dataset.<br> 
+We are using leaflet for the map, with OSM France tiles. <br>
+For the markers we are using leaflet.cluster to cluster the markers together as there are over 4,000 pins in the dataset.<br>
+We are using event driven architecture where the page will remain static until the user makes a change. 
 
 ![](images/archetectureComponants.png)
 
 ## Bristol Open Data API
+We are using the Road Traffic Collision (RTC) dataset. <br>
+We are getting geoJSON so it includes lat and long to be used to set the markers on the map.
 
 ![](images/DrawioFiles/mapApiDiagram.drawio.png)
-
-TODO: Repeat as necessary
 
 # User guide
 
