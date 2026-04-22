@@ -9,8 +9,3 @@ L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
 }).addTo(map);
 // End of start guide script
 console.log("Map Script successful!")
-
-var heat = L.heatLayer([   
-	[51.45, -2.555, 1], // lat, lng, intensity   
-	[51.45, -2.555, 0.9]   
-], {radius: 30}).addTo(map);

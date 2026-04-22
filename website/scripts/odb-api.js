@@ -10,12 +10,12 @@ let sevString = ""
 //where= (SEVERITY %3D 2 OR SEVERITY %3D 3)
 
 if ((mode == "0" && sev == "0") || (mode == null && sev == null)) {
-    urlEncoded = "1%3D1"
+    urlEncoded = "1%3D1"    
 } else {
 
     if (mode == "CARS" || mode == "CYC" || mode == "MCYC") {
         console.log(mode)
-        modeString = "RENDER = '" + mode + "' "
+        modeString = "RENDER = '"  + mode + "' "
     } else {
         modeString = "(RENDER = 'C'  OR RENDER = 'A' OR RENDER = 'E') ";
     }
@@ -38,14 +38,12 @@ if ((mode == "0" && sev == "0") || (mode == null && sev == null)) {
     console.log(urlEncoded);
 }
 
+//let url = `https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/41/query?where=${urlEncoded},TIME%20%3E%20${time}&outFields=DATE_,TIME,SEVERITY,ACCIDENT_TYPE,ACCIDENT_DESCRIPTION,RENDER,DATE_TIME_CONVERTED,SEVERITY_DESCRIPTION,CASUALTIES&outSR=4326&f=geojson`
 let url = `https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/41/query?where=${urlEncoded}&outFields=DATE_,TIME,SEVERITY,ACCIDENT_TYPE,ACCIDENT_DESCRIPTION,RENDER,DATE_TIME_CONVERTED,SEVERITY_DESCRIPTION,CASUALTIES&outSR=4326&f=geojson`
 fetch(url, {method: 'GET', headers: {"Accept": "application/json"}})
     .then(response => response.json())
     .then((json) => OdbToMap(json))
 
 console.log(url);
-
-
-    
 
 console.log("ODB Script Successful!");
