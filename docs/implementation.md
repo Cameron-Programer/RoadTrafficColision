@@ -119,7 +119,7 @@ Some keypoints are below
 ```
 
 
-## jslint warnings/reports
+## JSLint warnings/reports
 
 | Moduel              | Number of warnings |
 |---------------------|--------------------|
@@ -149,7 +149,6 @@ We are getting geoJSON so it includes lat and long to be used to set the markers
 
 # User guide
 
-TODO: Explain how each use-case works by providing step-by-step screenshots for each use-case. This should be based on a tested scenario.
 
 ### Filtering RTC's
 
