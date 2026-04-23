@@ -1,5 +1,5 @@
 | Cameron                                                                                     | Ninsang                                                                                                                                                     |
-| ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Created the GitHub                                                                          | Fixed the links in the readme                                                                                                                               |
 | Created the wireframe draft (A)                                                             | Created context diagram                                                                                                                                     |
 | Created UseCase diagrams                                                                    | Created Wireframe Low Fidelity (B)                                                                                                                          |
@@ -14,20 +14,25 @@
 | Created User guide for using the map & Filters                                              | Time Slider label implemeneted.                                                                                                                             |
 | Created UML diagram for the ODB API query for the map page and added it to implmentation.md | Side bar slide in and out implemented.                                                                                                                      |
 | Addedd introduction to implmentation.md                                                     | Testing.md revised                                                                                                                                          |
+| Added RTM to testing                                                                        |                                                                                                                                                             |
+| Changed map to OSM HOT style to improve visibility of markers                               |                                                                                                                                                             |
+| Added development history to implmentation.md                                               |                                                                                                                                                             |
 
 ---
 
 ### Glossary
 
-| Abbreviation | Meaning           |
-| ------------ | ----------------- |
-| ODB          | Open Data Bristol |
-| OSM          | Open Street Maps  |
-| Vars         | Variables         |
-| MD           | Markdown          |
+| Abbreviation | Meaning                         |
+|--------------|---------------------------------|
+| ODB          | Open Data Bristol               |
+| OSM          | Open Street Maps                |
+| Vars         | Variables                       |
+| MD           | Markdown                        |
+| OSM          | Open Street Map                 |
+| HOT          | Humanitarian OpenStreetMap Team |
 
 Tool Credidation:
     Open Data Bristol API
-    Open Street Map API
+    OpenStreetMap API
     Leaflet JS Library
     Coolors.co (https://coolors.co/d3d5d4-a2c5ac-9db5b2-878e99-7f6a93)

@@ -9,8 +9,8 @@ In its current state this system shows a map of every Road Traffic Collision (RT
 The police do not necessarily attend every non-injury RTC as such they do not report RTC's with no injures.
 It shows these using the following custom colour coded custom icons:
 
-| Mode/Render        | Icon                             |
-| ------------------ | -------------------------------- |
+| Mode/Render        | Icon                               |
+|--------------------|------------------------------------|
 | Car                | ![](images/mapMarkers/carsFat.png) |
 | Cycle              | ![](images/mapMarkers/cycFat.png)  |
 | Motorcycle         | ![](images/mapMarkers/mcycFat.png) |
@@ -18,8 +18,8 @@ It shows these using the following custom colour coded custom icons:
 | Child pedestrian   | ![](images/mapMarkers/cFat.png)    |
 | Elderly pedestrian | ![](images/mapMarkers/eFat.png)    |
 
-| Severity | Colour                           |
-| -------- | -------------------------------- |
+| Severity | Colour                             |
+|----------|------------------------------------|
 | Slight   | ![](images/mapMarkers/carsMin.png) |
 | Serious  | ![](images/mapMarkers/carsSrs.png) |
 | Fatal    | ![](images/mapMarkers/carsFat.png) |
@@ -34,13 +34,13 @@ The system also groups pins together if they are to close, making the system per
 The system has gone through a number of stages in its development.
 Some keypoints are below
 
-| Commit (links)                                                                                                   | Description                                                                                                                                                                                                              | Version Number |
-| ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------- |
+| Commit (links)                                                                                                      | Description                                                                                                                                                                                                            | Version Number |
+|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
 | [3bc44fd](https://github.com/Cameron-Programer/RoadTrafficColision/tree/3bc44fdb7ecb138ff894bfbbfcc20817d35a1271)   | This is the first version of the program that showed all the collisions on the map.`<br>` So this the point where the program was somewhat usable                                                                      | V0.1.0         |
 | [4a20f20](https://github.com/Cameron-Programer/RoadTrafficColision/commit/4a20f201aa1408bf8475ae0bf8c4095a51c771cc) | This is the commit when the JS and CSS were moved out of the HTML file to make it easier to maintain `<br>` and allow for multiple people to work simultaniously on the program with lower chances of merge confilicts | V0.1.1         |
-| [974d5da](https://github.com/Cameron-Programer/RoadTrafficColision/tree/974d5dab2a720094f800e082c1779f6e6e6bd3d8)   | This is the commit that added marker clustering,this resolved the issue where bristol was just a sea of pins when zoomed out.                                                                                            | V0.1.2         |
-| [c593d14](https://github.com/Cameron-Programer/RoadTrafficColision/tree/c593d1471891970027cf9c1beb0cf6f9954a0c0e)   | This is the commit that allowed the user to select filters, making it easier for the data to be understood                                                                                                               | V0.2.0         |
-| [2227f01](https://github.com/Cameron-Programer/RoadTrafficColision/tree/2227f014f80ee483e7b41793961a239d737b4c03)   | This is the commit that added the colour coded icons, to make the data easier to understand at a glance                                                                                                                  | V0.2.1         |
+| [974d5da](https://github.com/Cameron-Programer/RoadTrafficColision/tree/974d5dab2a720094f800e082c1779f6e6e6bd3d8)   | This is the commit that added marker clustering,this resolved the issue where bristol was just a sea of pins when zoomed out.                                                                                          | V0.1.2         |
+| [c593d14](https://github.com/Cameron-Programer/RoadTrafficColision/tree/c593d1471891970027cf9c1beb0cf6f9954a0c0e)   | This is the commit that allowed the user to select filters, making it easier for the data to be understood                                                                                                             | V0.2.0         |
+| [2227f01](https://github.com/Cameron-Programer/RoadTrafficColision/tree/2227f014f80ee483e7b41793961a239d737b4c03)   | This is the commit that added the colour coded icons, to make the data easier to understand at a glance                                                                                                                | V0.2.1         |
 
 ## Project Structure
 
@@ -118,8 +118,19 @@ Some keypoints are below
 
 ```
 
+
+## jslint warnings/reports
 TODO: provide a table listing the number of jslint warnings/reports for each module.
 
+| Moduel          | Number of warnings |
+|-----------------|--------------------|
+| map.js          | 12                 |
+| obd-to-mapsc.js | 13                 |
+| obd-api.js      | 35                 |
+
+
+
+   
 ## Software Architecture
 We are using the OpenDataBristol API to access the road traffic collision dataset.<br> 
 We are using leaflet for the map, with OSM France tiles. <br>
