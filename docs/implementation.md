@@ -120,14 +120,16 @@ Some keypoints are below
 
 
 ## jslint warnings/reports
-TODO: provide a table listing the number of jslint warnings/reports for each module.
 
-| Moduel          | Number of warnings |
-|-----------------|--------------------|
-| map.js          | 12                 |
-| obd-to-mapsc.js | 13                 |
-| obd-api.js      | 35                 |
-
+| Moduel              | Number of warnings |
+|---------------------|--------------------|
+| map.js              | 12                 |
+| obd-to-mapsc.js     | 13                 |
+| obd-api.js          | 25                 |
+| slidetimeupdater.js | 12                 |
+| sidebar.js          | 8                  |
+| obd-heatAPI.js      | 7                  |
+| heat.js             | 11                 |
 
 
    
