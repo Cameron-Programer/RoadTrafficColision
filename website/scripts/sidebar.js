@@ -3,7 +3,7 @@ let slide = document.getElementById("newtab")
 let value = -99.9
 
 button.addEventListener("click", ()=> {
-    value = (value === -99.9) ? -10 : -99.9;
+    value = (value === -99.9) ? -40 : -99.9;
     /*if (value == -99.9) {
         value = -10
     } else {

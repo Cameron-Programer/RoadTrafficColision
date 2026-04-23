@@ -23,10 +23,10 @@ if ((mode === "0" && sev === "0") || (mode == null && sev == null)) {
 
     sevString = "SEVERITY_DESCRIPTION = '" + sev + "'";
 
-    if (sev !== 0 && mode !== 0) {
+    if (sev != 0 && mode != 0) {
         UrlUnencoded = ("(" + modeString + " AND " + sevString + ")");
     } else {
-        if (sev == null || sev === 0) {
+        if (sev == null || sev == 0) {
             UrlUnencoded = modeString;
         } else {
             UrlUnencoded = sevString;
