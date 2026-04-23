@@ -111,10 +111,10 @@ input:hover {
     position: relative;
     background-color: var(--ash-grey);
     /*background-color: black;*/
-    height: 80%;
+    height: 80%;`
     width: 100px;
-    right: 10px;
-    transform: translateX(10%); 
+    right: 0px;
+    transform: translateY(-50%);
 }
 #newtabbutton p { 
     text-align: left;
@@ -124,6 +124,11 @@ input:hover {
 }
 #newtabbutton:hover { 
     cursor: pointer
+}
+#newtabcontent {
+    position: relative;
+    left: 5%;
+    z-index: 10;
 }
 
 footer {
