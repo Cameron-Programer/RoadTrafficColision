@@ -20,7 +20,7 @@
 | Added JSLint warning to implmentation.md                                                    |                                                                                                                                                             |
 | Added  Use Case 2 to Requirement.md                                                         |                                                                                                                                                             | 
 | Added Software Architecture introduction and diagram to implmentation.md                    |                                                                                                                                                             |
-
+| Added acknowlagments text to slidebar                                                       |                                                                                                                                                             |
 ---
 
 ### Glossary
