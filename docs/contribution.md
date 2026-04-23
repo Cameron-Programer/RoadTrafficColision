@@ -17,6 +17,9 @@
 | Added RTM to testing                                                                        |                                                                                                                                                             |
 | Changed map to OSM HOT style to improve visibility of markers                               |                                                                                                                                                             |
 | Added development history to implmentation.md                                               |                                                                                                                                                             |
+| Added JSLint warning to implmentation.md                                                    |                                                                                                                                                             |
+| Added  Use Case 2 to Requirement.md                                                         |                                                                                                                                                             | 
+| Added Software Architecture introduction and diagram to implmentation.md                    |                                                                                                                                                             |
 
 ---
 
@@ -26,10 +29,10 @@
 |--------------|---------------------------------|
 | ODB          | Open Data Bristol               |
 | OSM          | Open Street Maps                |
+| HOT          | Humanitarian OpenStreetMap Team |
 | Vars         | Variables                       |
 | MD           | Markdown                        |
-| OSM          | Open Street Map                 |
-| HOT          | Humanitarian OpenStreetMap Team |
+
 
 Tool Credidation:
     Open Data Bristol API
